@@ -1,0 +1,14 @@
+streamlit
+newspaper3k
+langchain
+langchain-community
+langchain_chroma
+langchain-ollama
+chromadb
+ollama
+tiktoken
+lxml_html_clean
+beautifulsoup4
+pillow
+pytesseract
+pdf2image
