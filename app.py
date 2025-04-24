@@ -11,7 +11,8 @@ from bs4 import BeautifulSoup
 from newspaper import Article, ArticleException
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_chroma import Chroma
+# from langchain_chroma import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from dotenv import load_dotenv
 from PIL import Image
@@ -895,12 +896,12 @@ with st.sidebar:
                     url_hash = hashlib.md5(url.encode()).hexdigest()
                     db_path = os.path.join(DB_DIR, url_hash)
                     
-                    vectordb = Chroma.from_documents(
-                        documents,
-                        embeddings,
-                        persist_directory=db_path
-                    )
-                    
+                    # vectordb = Chroma.from_documents(
+                    #     documents,
+                    #     embeddings,
+                    #     persist_directory=db_path
+                    # )
+                    vectordb = FAISS.from_documents(documents, embeddings)
                     st.session_state.websites[url] = vectordb
                     st.session_state.website_metadata[url] = metadata
                     

@@ -64,8 +64,8 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/webwise-chat.git
-cd webwise-chat
+git clone https://github.com/Karanjain09/WebWise.git
+cd WebWise-chat
 
 # 2. Install required dependencies
 pip install -r requirements.txt
@@ -103,20 +103,20 @@ Let’s break it down step-by-step so even non-techies can follow!
   +------------+       +------------------+       +-----------------+
   |  Website   | --->  |   WebWise Crawler| --->  |   Text/Image    |
   +------------+       +------------------+       +-----------------+
-                                                 ↓
-                                         +------------------+
-                                         | Vector Embeddings|
-                                         +------------------+
-                                                 ↓
-                                             [ChromaDB]
-                                                 ↓
-                                            User Question
-                                                 ↓
-                                        +-------------------+
-                                        |   LLM (AI Model)  |
-                                        +-------------------+
-                                                 ↓
-                                     🎯 Final Answer + 📸 Images
+                                                          ↓
+                                                  +------------------+
+                                                  | Vector Embeddings|
+                                                  +------------------+
+                                                          ↓
+                                                      [ChromaDB]
+                                                          ↓
+                                                      User Question
+                                                          ↓
+                                                  +-------------------+
+                                                  |   LLM (AI Model)  |
+                                                  +-------------------+
+                                                          ↓
+                                              🎯 Final Answer + 📸 Images
 ```
 
 ---
@@ -138,8 +138,7 @@ Let’s break it down step-by-step so even non-techies can follow!
 Create a `.env` file with your API keys:
 
 ```env
-OPENAI_API_KEY=your_openai_key
-HUGGINGFACEHUB_API_TOKEN=your_huggingface_token
+Groq_API_KEY=your_Groq_key
 ```
 
 ---
@@ -183,15 +182,9 @@ pip install -r requirements.txt
 
 ## 👨‍💻 Author
 
-Made with 💡 and ☕ by **[Your Name](https://github.com/Karanjain09)**
+Made with 💡 and ☕ by **[Karan Jain](https://github.com/Karanjain09)**
 
 If you love it, please ⭐ the repo and share it!
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for more info.
 
 ---
 
